@@ -1,0 +1,7 @@
+main {
+    background-image: url('MenuPageIntro.png');
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px; /* Adjust as needed */
+    padding-bottom: 50px; /* Adjust as needed */
+  }

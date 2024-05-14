@@ -1,0 +1,63 @@
+@import url('https://fonts.google.com/specimen/Fira+Sans+Condensed');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+  
+.inclined-navbar {
+    background-color: #175161;
+    padding-top:  20px;
+    padding-bottom: 20px;
+
+    transform: skewY(0deg);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.Logo {
+    justify-content: flex-start;
+    margin-right: 13px;
+    margin-left: 35px;
+}
+  
+.UnorderedlList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    display: flex;
+}
+
+.findus{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+}
+
+.lists {
+    margin: 0 13px;
+    font-family: "Fira Sans Condensed", sans-serif;
+}
+  
+.link {
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    display: block;
+}
+ 
+.mainpagebackground{
+  background-image: url('MenuPageIntro.png');
+  background-size: cover;
+  background-position: center 25%;
+  padding-bottom: 130px; /* Adjust as needed */
+  padding-top: 80px; /* Adjust this based on the height of your navbar */
+  min-height:calc(100vh - 200px);/* Ensure it covers the viewport height minus navbar height */
+  /* Add other styling as needed */
+}
