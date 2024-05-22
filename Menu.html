@@ -1,38 +1,233 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Always Coffee</title>
+    <link rel="mainpagesheet" href="mainpage.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="fontsheet" href="fonts.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Always Coffee Menu</title>
 </head>
-<body>
-  <nav class="inclined-navbar">
-    <a class="Logo" href="MainPage.html">
-      <img src="AlwaysCoffeeLogo.png" width="32" height="32" alt="" >
-    </a>
-    <ul class="UnorderedlList">
-      <li class="lists"><a class="link"  href="Menu.html">MENU</a></li>
-      <li class="lists"><a class="link" href="Contact.html">CONTACT</a></li>
-      <li class="lists"><a class="link" href="OrderNow.html">ORDER NOW</a></li>
-    </ul>
-    
-    <ul class="findus">
-      <li class="lists"><a class="link"  href="FindUs.html">FIND US</a></li>
-    </ul>
-  </nav>
 
-  <main class="menumain">
-  <h1 class="HeaderMenu">
-    Find your next favorite drink!
-  </h1>
-  <p>
-    hello
-  </p>
-  </main>
+<body class="MenuBody">
+<header>
+    <center><h1><b>ALWAYS COFFEE MENU</b></h1></center>
+        <nav class="inclined-navbar">
+          <a class="Logo" href="MainPage.html">
+            <img src="AlwaysCoffeeLogo.png" width="32" height="32" alt="">
+          </a>
+          <ul class="UnorderedlList">
+            <li class="lists"><a class="link"  href="Menu.html">MENU</a></li>
+          </ul>
+          
+          <ul class="findus">
+            <li class="lists"><a class="link"  href="Location.html">FIND US</a></li>
+          </ul>
+        </nav>
+</header>
+
+
+<div class="form">
+    <div class ="square">
+       <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+</div>
+
+<div class="menu-container">
+
+    <!-- Menu items go here -->
+    <div class="menu-item">
+        <img src="americano.jpg" alt="Americano">
+        <h3>Americano</h3>
+        <p>₱65</p>
+        <button onclick="addToCart('Americano', 65)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="hazelnut_latte.jpg" alt="Hazelnut Latte">
+        <h3>Hazelnut Latte</h3>
+        <p>₱65</p>
+        <button onclick="addToCart('Hazelnut Latte', 65)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="spanish_latte.jpg" alt="Spanish Latte">
+        <h3>Spanish Latte</h3>
+        <p>₱65</p>
+        <button onclick="addToCart('Spanish Latte', 65)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="caramel_macchiato.jpg" alt="Caramel Macchiato">
+        <h3>Caramel Macchiato</h3>
+        <p>₱65</p>
+        <button onclick="addToCart('Caramel Macchiato', 65)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="viet_coffee.jpg" alt="Viet Coffee">
+        <h3>Viet Coffee</h3>
+        <p>₱65</p>
+        <button onclick="addToCart('Viet Coffee', 65)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="sea_salt_caramel.jpg" alt="Sea Salt Caramel">
+        <h3>Sea Salt Caramel</h3>
+        <p>₱65</p>
+        <button onclick="addToCart('Sea Salt Caramel', 65)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="nutella_latte.jpg" alt="Nutella Latte">
+        <h3>Nutella Latte</h3>
+        <p>₱75</p>
+        <button onclick="addToCart('Nutella Latte', 75)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="biscoff_latte.jpg" alt="Biscoff Latte">
+        <h3>Biscoff Latte</h3>
+        <p>₱75</p>
+        <button onclick="addToCart('Biscoff Latte', 75)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="matcha.jpg" alt="Matcha">
+        <h3>Matcha</h3>
+        <p>₱75</p>
+        <button onclick="addToCart('Matcha', 75)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="classic_chocolate.jpg" alt="Classic Chocolate">
+        <h3>Classic Chocolate</h3>
+        <p>₱65</p>
+        <button onclick="addToCart('Classic Chocolate', 65)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="strawberry_milk.jpg" alt="Strawberry Milk">
+        <h3>Strawberry Milk</h3>
+        <p>₱65</p>
+        <button onclick="addToCart('Strawberry Milk', 65)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="nutella_milk.jpg" alt="Nutella Milk">
+        <h3>Nutella Milk</h3>
+        <p>₱75</p>
+        <button onclick="addToCart('Nutella Milk', 75)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="biscoff_milk.jpg" alt="Biscoff Milk">
+        <h3>Biscoff Milk</h3>
+        <p>₱75</p>
+        <button onclick="addToCart('Biscoff Milk', 75)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="strawberry_bomb.jpg" alt="Strawberry Bomb">
+        <h3>Strawberry Bomb</h3>
+        <p>₱65</p>
+        <button onclick="addToCart('Strawberry Bomb', 65)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="mango_bomb.jpg" alt="Mango Bomb">
+        <h3>Mango Bomb</h3>
+        <p>₱65</p>
+        <button onclick="addToCart('Mango Bomb', 65)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="blueberry_milk.jpg" alt="Blueberry Milk">
+        <h3>Blueberry Milk</h3>
+        <p>₱65</p>
+        <button onclick="addToCart('Blueberry Milk', 65)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="peach_tea.jpg" alt="Peach Tea">
+        <h3>Peach Tea</h3>
+        <p>₱65</p>
+        <button onclick="addToCart('Peach Tea', 65)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="green_apple_tea.jpg" alt="Green Apple Tea">
+        <h3>Green Apple Tea</h3>
+        <p>₱65</p>
+        <button onclick="addToCart('Green Apple Tea', 65)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="passion_fruit_tea.jpg" alt="Passion Fruit Tea">
+        <h3>Passion Fruit Tea</h3>
+        <p>₱65</p>
+        <button onclick="addToCart('Passion Fruit Tea', 65)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="lychee_tea.jpg" alt="Lychee Tea">
+        <h3>Lychee Tea</h3>
+        <p>₱65</p>
+        <button onclick="addToCart('Lychee Tea', 65)">Add to Cart</button>
+    </div>
+</div>
+
+<div class="cart">
+    <h2 onclick="toggleCart()">Cart (<span id="cartItemCount">0</span> items)</h2>
+    <ul class="cart-items">
+        <!-- Cart items will be dynamically inserted here -->
+    </ul>
+    <div class="cart-total">
+        <p>Total: ₱<span id="totalAmount">0.00</span></p>
+    </div>
+</div>
+
+<script>
+    let cart = [];
+    let totalAmount = 0;
+
+    function addToCart(itemName, itemPrice) {
+        const cartItem = { name: itemName, price: itemPrice, id: Date.now() };
+        cart.push(cartItem);
+        totalAmount += itemPrice;
+        updateCart();
+    }
+
+    function removeFromCart(itemId, itemPrice) {
+        cart = cart.filter(item => item.id !== itemId);
+        totalAmount -= itemPrice;
+        updateCart();
+    }
+
+    function updateCart() {
+        const cartItemsContainer = document.querySelector('.cart-items');
+        cartItemsContainer.innerHTML = '';
+        cart.forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = `${item.name} - ₱${item.price.toFixed(2)}`;
+            const removeButton = document.createElement('button');
+            removeButton.textContent = 'Remove';
+            removeButton.onclick = () => removeFromCart(item.id, item.price);
+            li.appendChild(removeButton);
+            cartItemsContainer.appendChild(li);
+        });
+        document.getElementById('totalAmount').textContent = totalAmount.toFixed(2);
+        document.getElementById('cartItemCount').textContent = cart.length;
+    }
+
+    function toggleCart() {
+        const cartItems = document.querySelector('.cart-items');
+        const cartTotal = document.querySelector('.cart-total');
+        const isVisible = cartItems.style.display === 'block';
+        cartItems.style.display = isVisible ? 'none' : 'block';
+        cartTotal.style.display = isVisible ? 'none' : 'block';
+    }
+</script>
+
 </body>
 </html>
->

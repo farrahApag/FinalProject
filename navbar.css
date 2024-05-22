@@ -1,10 +1,13 @@
 @import url('https://fonts.google.com/specimen/Fira+Sans+Condensed');
 
+/* MainPage Body */
 body {
   margin: 0;
   padding: 0;
 }
   
+
+/* NavBar for all Pages */
 .inclined-navbar {
     background-color: #175161;
     padding-top:  20px;
@@ -19,12 +22,16 @@ body {
     z-index: 1000;
 }
 
+
+/* NavBar Logo */
 .Logo {
     justify-content: flex-start;
     margin-right: 13px;
     margin-left: 35px;
 }
   
+
+/* Navbar - Navigations */
 .UnorderedlList {
     list-style-type: none;
     margin: 0;
@@ -33,6 +40,8 @@ body {
     display: flex;
 }
 
+
+/* Navbar - Find Us link */
 .findus{
     list-style-type: none;
     margin: 0;
@@ -40,11 +49,15 @@ body {
     justify-content: flex-end;
 }
 
+
+/* MainPage - Lists */
 .lists {
     margin: 0 13px;
     font-family: "Fira Sans Condensed", sans-serif;
 }
   
+
+/* MainPage - Link */
 .link {
     color: white;
     text-decoration: none;
@@ -52,6 +65,7 @@ body {
     display: block;
 }
  
+/* MainPage - Background */
 .mainpagebackground{
   background-image: url('MenuPageIntro.png');
   background-size: contain;
@@ -62,11 +76,175 @@ body {
   /* Add other styling as needed */
 }
 
+/*  - Menu Navigation Link */
 .menumain {
     background-color: #A8D2E0;
-    min-height: 100vh; /* Ensure it covers the full height of the viewport */
+    padding-bottom: 280px; /* Adjust as needed */
+    padding-top: 100px; /* Adjust this based on the height of your navbar */
+    min-height:calc(100vh - 210px);/* Ensure it covers the viewport height minus navbar height */
+    /* Add other styling as needed */
 }
+
+.form{
+    padding-bottom: 280px; /* Adjust as needed */
+    padding-top: 100px; /* Adjust this based on the height of your navbar */
+    min-height:calc(100vh - 210px);/* Ensure it covers the viewport height minus navbar height */
+    /* Add other styling as needed */
+    background-color: #A8D2E0;
+}
+
+.menu-item button:hover {
+    background-color: #476a59;
+}
+.cart {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+}
+.cart h2 {
+    margin-top: 0;
+    cursor: pointer;
+}
+.MenuBody {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #a8d2e0;  
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.menu-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+}
+.menu-item img {
+    width: 100%;
+    height: auto;
+}
+.menu-item h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+.menu-item p {
+    color: #888;
+    margin: 0 10px 10px;
+}
+.menu-item button {
+    background-color: #5a8f7b;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+}
+.menu-item button:hover {
+    background-color: #476a59;
+}
+.cart {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+}
+.cart h2 {
+    margin-top: 0;
+    cursor: pointer;
+}
+
 
 .Headermenu{
     color:black
 }
+
+.cart-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.cart-items li {
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-items li button {
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.cart-items li button:hover {
+    background-color: #c0392b;
+}
+.cart-total {
+    display: none;
+}
+
+.square{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top:1px;
+    margin-right: 200px;
+}
+
+.location-heading{
+    margin-left: 300px;
+    background-color: #A8D2E0;
+}
+
+.location-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    font-family: "Fira Sans Condensed", sans-serif;
+}
+
+.location-a{
+    font-family: "Fira Sans Condensed", sans-serif;
+}
+.BranchesHeader{
+    font-family: "Fira Sans Condensed", sans-serif;
+    color: #175161;
+    margin-top: 120px;
+    margin-right: 29px;
+    font-size: 70px;
+}
+
+
